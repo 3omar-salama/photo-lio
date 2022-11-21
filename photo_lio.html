@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PhotoLio</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="phot_lio.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">About</a>
+      <a href="#">Photos</a>
+      <a href="#">Shop</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+
+    <h1>PHOTOLIO</h1>
+    <p>A template made by w3.css for photographers.</p>
+
+    <div class="text-align">
+      <button class="button" onclick="namefunction()">Toggle Grid Padding</button>
+    </div>
+    
+    <script>
+      function namefunction(){
+        var x=document.getElementsByClassName("notmargined");
+        for(var i=0; i < x.length; i++){
+          if(x[i].classList=="notmargined"){
+            x[i].classList.add("margined");
+          }else{
+            x[i].classList.remove("margined");
+          }
+        }
+      }
+    </script>
+    <br>
+
+    <div class="row"> 
+      <div>
+        <img class="notmargined" src="file:///home/omar/Downloads/rocks.jpg" style="width:100%;height: 35%;">
+        <img class="notmargined" src="file:///home/omar/Downloads/sound.jpg" style="width:100%;height: 9%;">
+        <img class="notmargined" src="file:///home/omar/Downloads/woods.jpg" style="width:100%;height: 6%;">
+        <img class="notmargined" src="file:///home/omar/Downloads/rock.jpg" style="width:100%;height: 20%;">
+        <img class="notmargined" src="file:///home/omar/Downloads/nature.jpg" style="width:100%;height: 13%;">
+        <img class="notmargined" src="file:///home/omar/Downloads/mist.jpg" style="width:100%;height: 5%;">
+      </div>  
+      <div>
+        <img class="notmargined" src="file:///home/omar/Downloads/coffee.jpg" style="width:100%;height: 9%;">
+        <img class="notmargined" src="file:///home/omar/Downloads/bridge.jpg" style="width:100%">
+        <img class="notmargined" src="file:///home/omar/Downloads/notebook.jpg" style="width:100%;height: 13%;">
+        <img class="notmargined" src="file:///home/omar/Downloads/london.jpg" style="width:100%;height: 14%;">
+        <img class="notmargined" src="file:///home/omar/Downloads/rocks%20(1).jpg" style="width:100%;height: 36%;">
+        <img class="notmargined" src="file:///home/omar/Downloads/avatar_g.jpg" style="width:100%;height: 12%;">
+      </div>
+      <div>
+        <img class="notmargined" src="file:///home/omar/Downloads/mist%20(1).jpg" style="width:100%">
+        <img class="notmargined" src="file:///home/omar/Downloads/workbench.jpg" style="width:100%">
+        <img class="notmargined" src="file:///home/omar/Downloads/gondol.jpg" style="width:100%">
+        <img class="notmargined" src="file:///home/omar/Downloads/skies.jpg" style="width:100%">
+        <img class="notmargined" src="file:///home/omar/Downloads/lights.jpg" style="width:100%">
+        <img class="notmargined" src="file:///home/omar/Downloads/workshop.jpg" style="width:100%;height: 21%;">
+      </div>
+    </div>
+
+    <div class="aligncenter">
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-snapchat-ghost"></a>
+      <a href="#" class="fa fa-pinterest"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+      </div>
+  </div>
+    <p> Powered by <a href="https://www.w3schools.com/w3css/default.asp"><ins class="link">w3.css</ins></a></p>
+    
+    <br>
+  </body>
+</html>
